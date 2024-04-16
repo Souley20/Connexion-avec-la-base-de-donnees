@@ -1,0 +1,82 @@
+/* Ceci est un commentaire non interprété par le navigateur */
+/* le sélecteur de pages */
+.hero-scene{
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: url(../images/FondHeroScene.jpg);
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+
+    *{
+        //Positionner les éléments devant le ::before
+        position:relative;
+    }
+
+    .hero-scene-content{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+h1 {
+  text-align: justify;
+  font-size: 25px;
+  color: dark;
+}
+nav {
+  color="bg-dark";
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 10px;
+  margin: 0 10px;
+}
+li {
+  color="bg-dark";
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 10px;
+  margin: 0 10px;
+}
+a {
+  color="bg-dark";
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 10px;
+  margin: 0 10px;
+}
+h2 {
+  text-align: justify
+  margin: 0 10px;
+  color:"bg-dark";
+}
+h3 {
+color="bg-dark";
+margin: 0 10px;
+max-width: 1200px
+}
+/* style de base pour le site*/
+footer {
+  color="bg-dark";
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 10px;
+  margin: 0 10px;
+
+}
+/* Styles pour les écrans de tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Vos styles pour les écrans de tablettes ici */
+}
